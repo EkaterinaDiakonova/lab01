@@ -123,3 +123,13 @@ Console.WriteLine($"Средний балл за 3 работы: {work}");
 Console.WriteLine($"Стипендия положена (>= 4.0): {ctipendia}");
 
 Console.WriteLine($"Учебных недель осталось в семестре: {isb}");
+
+Console.WriteLine();
+Console.WriteLine("Финансовый мини-расчет");
+int scholarship = 30000;
+int monthlyExpenses = 15000;
+const int MonthsInSemester = 4;
+int monthlyRemaining = scholarship - monthlyExpenses;
+int semesterRemaining = monthlyRemaining * MonthsInSemester;
+Console.WriteLine($"Остаток к концу месяца: {monthlyRemaining} руб.");
+Console.WriteLine($"Остаток за весь семестр: {semesterRemaining} руб.");
