@@ -133,3 +133,13 @@ int monthlyRemaining = scholarship - monthlyExpenses;
 int semesterRemaining = monthlyRemaining * MonthsInSemester;
 Console.WriteLine($"Остаток к концу месяца: {monthlyRemaining} руб.");
 Console.WriteLine($"Остаток за весь семестр: {semesterRemaining} руб.");
+
+Console.WriteLine();
+Console.WriteLine("Конвертер температур");
+double celsius = 23.5;
+const double offsetK = 273.15;
+const double multiplier = 9.0 / 5.0;
+const int offsetF = 32;
+double fahrenheit = celsius * multiplier + offsetF;
+double kelvin = celsius + offsetK;
+Console.WriteLine($"{celsius} C = {fahrenheit} F = {kelvin}K");
